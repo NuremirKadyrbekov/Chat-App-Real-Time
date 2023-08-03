@@ -42,7 +42,7 @@ const Chat = () => {
 
   const leftRoom = () => {
     socket.emit("leftRoom", { params });
-    navigate("/chat-app-react-client ");
+    navigate("/");
     alert(`Вы вышли из  ${params.room} беседы`)
     
   };

@@ -55,9 +55,10 @@ li {
 }
 
 .container {
-  width: 1240px;
+  width: 400px;
   margin: 0 auto;
   min-height: 100vh;
+  border: 10px solid;
 }
 .FFF{
   background-color: rgb(165, 163, 161);
@@ -105,3 +106,11 @@ li {
       }
       
 } */
+
+
+
+@media (max-width:400px) {
+   .container{
+    width: 400px;
+   }
+}
