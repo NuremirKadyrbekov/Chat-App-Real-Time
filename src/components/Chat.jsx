@@ -67,6 +67,7 @@ const Chat = () => {
 
   return (
     <div className={styles.wrap}>
+      <div className={styles.Wrap2}>
       <div className={styles.header} id="Main">
         <div className={styles.title}>{params.room}</div>
         <div className={styles.users}><p className={styles.HeaderUsers}>{users}</p> пользователя участвуют в беседе</div>
@@ -76,7 +77,7 @@ const Chat = () => {
           </button>
         </div>
         <button className={styles.left} onClick={leftRoom}>
-          Выйти с этой беседы
+          Выйти
         </button>
       </div>
 
@@ -110,6 +111,7 @@ const Chat = () => {
           <input type="submit" onSubmit={handleSubmit} value="Отправить сообшение " />
         </div>
       </form>
+      </div>
     </div>
   );
 };
