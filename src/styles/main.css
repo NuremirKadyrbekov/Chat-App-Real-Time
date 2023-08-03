@@ -8,8 +8,8 @@ body {
   margin: 0;
   overflow-x: hidden;
   color: rgb(48, 43, 43);
+  
 }
-
 h1,
 h2,
 h3,
@@ -106,7 +106,18 @@ li {
       
 } */
 
-
+@media (max-width:475px) {
+  .container{
+   width: 400px;
+   margin-top: 0px;
+   
+  }
+  body{
+   background-image: url(https://bogatyr.club/uploads/posts/2023-03/1679462538_bogatyr-club-p-vertikalnie-oboi-chernii-fon-instagram-1.jpg );
+   background-size: cover ;
+  
+  }
+}
 
 @media (max-width:400px) {
    .container{
@@ -117,12 +128,10 @@ li {
     background-image: url(https://bogatyr.club/uploads/posts/2023-03/1679462538_bogatyr-club-p-vertikalnie-oboi-chernii-fon-instagram-1.jpg );
    }
 }
-@media (max-width:475px) {
-  .container{
-   width: 400px;
-   margin-top: -50px;
-  }
-  body{
-   background-image: url(https://bogatyr.club/uploads/posts/2023-03/1679462538_bogatyr-club-p-vertikalnie-oboi-chernii-fon-instagram-1.jpg );
-  }
+@media (max-width:375px) {
+    .container{
+      width: 400px;
+      
+    }
+    
 }
