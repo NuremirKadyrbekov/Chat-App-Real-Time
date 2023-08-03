@@ -1,0 +1,248 @@
+
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.header {
+  width: 100%;
+  color: #fff;
+  background: #17212b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-radius:12px 12px 0 0 ;
+}
+
+.title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.left {
+  background: rgb(253, 73, 73);
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form {
+  color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #17212b;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 20px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.input {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.input input {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.button {
+  text-align: center;
+}
+
+.button input {
+  cursor: pointer;
+  color: #fff;
+}
+
+.messages {
+  flex-grow: 1;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  /* background: rgb(15, 65, 73); */
+  padding: 32px;
+  background-image: url(https://phonoteka.org/uploads/posts/2021-04/1619156222_11-phonoteka_org-p-fon-dlya-chata-telegramm-12.jpg);
+  background-size: cover;
+  overflow: auto;
+}
+.messages::-webkit-scrollbar {
+  width: 10px;   
+  border-radius: 10px;
+  background: #fff;
+
+}
+.messages::-webkit-scrollbar-track {
+  background: #242a33;        /* цвет зоны отслеживания */
+  transition: 1s;
+
+}
+.messages::-webkit-scrollbar-thumb {
+  background-color: #525a62;    /* цвет бегунка */
+  border-radius: 20px;       /* округлось бегунка */
+  transition: 1s;
+}
+.messages::-webkit-scrollbar-track:hover {
+  background: #404b5c;        /* цвет зоны отслеживания */
+  transition: 1s;
+
+}
+.messages::-webkit-scrollbar-thumb:hover {
+  background-color: #66727e;    /* цвет бегунка */
+  border-radius: 20px;       /* округлось бегунка */
+  transition: 1s;
+
+}
+/* #242a334e */
+/* #525a625b */
+.emoji {
+  width: 40px;
+  cursor: pointer;
+  position: relative;
+}
+
+.emoji img {
+  vertical-align: middle;
+}
+
+.emojies {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100%;
+}
+
+.LeftGroupName{
+  color: red;
+
+}
+.SwitchLight{
+  width: 70px;
+  height: 35px;
+  border-radius: 6px;
+  margin-left: 490px;
+  background: rgb(88, 86, 86);
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.HeaderUsers{
+  font-weight: bold;
+  font-size: 19px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  ;
+  
+    position: absolute;
+    margin-left: -15px;
+    margin-top: -2px;
+}
+/* @media (max-width:575px) {
+  .wrap {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    padding: 15px 0;
+  } 
+  .title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.left {
+  background: rgb(253, 73, 73);
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+} 
+@media (max-width:375px) {
+  .users{
+    font-size: 9px;
+    margin-top: 30px;
+    margin-left: -65px;
+  } 
+  .left{
+    width: 100px;
+    font-size: 10px;
+  }
+  .input input {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .emojies{
+
+  }
+  .emoji {
+    width: 10px;
+    cursor: pointer;
+    position: relative;
+  }
+  .emoji img {
+    vertical-align: middle;
+  }
+  .emojies {
+    position: absolute;
+    left: 500%;
+    transform: translateX(-50%);
+    bottom: 100%; 
+  }
+  
+} */
+
+@media (max-width:475px) {
+        .wrap{
+          width: 90%;
+          height: 1700px;
+        }
+      
+}
+@media (max-width:375px) {
+  .wrap{
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width:175px) {
+  .wrap{
+    width: 100%;
+    height: 100%;
+  }
+}
