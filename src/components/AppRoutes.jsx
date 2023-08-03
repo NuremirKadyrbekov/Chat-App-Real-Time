@@ -6,7 +6,7 @@ import Chat from "./Chat";
 
 const AppRoutes = () => (
   <Routes>
-    <Route path="/chat-app-react-client" element={<Main />} />
+    <Route path="/" element={<Main />} />
     <Route path="/chat" element={<Chat />} />
   </Routes>
 );
