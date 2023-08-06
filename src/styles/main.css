@@ -58,6 +58,7 @@ li {
   width: 70%;
   margin: 0 auto;
   min-height: 100vh;
+  margin-top: -200px;
 }
 .FFF{
   background-color: rgb(165, 163, 161);
@@ -128,10 +129,9 @@ li {
     background-image: url(https://bogatyr.club/uploads/posts/2023-03/1679462538_bogatyr-club-p-vertikalnie-oboi-chernii-fon-instagram-1.jpg );
    }
 }
-@media (max-width:375px) {
+@media (max-width:376px) {
     .container{
       width: 400px;
-      
+      margin-top: -100px;
     }
-    
 }
