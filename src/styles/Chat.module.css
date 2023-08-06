@@ -225,6 +225,10 @@
   .messages{
    height: 650px;
   }
+  .header{
+    padding-top: 10px;
+  }
+  
 }
 @media (max-width:475px) {
      .wrap{
@@ -275,6 +279,9 @@
      }
      .messages{
       height: 650px;
+     }
+     body{
+      background-color: black;
      }
 }
 @media (max-width:400px) {

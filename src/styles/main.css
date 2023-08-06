@@ -113,9 +113,9 @@ li {
    
   }
   body{
-   background-image: url(https://bogatyr.club/uploads/posts/2023-03/1679462538_bogatyr-club-p-vertikalnie-oboi-chernii-fon-instagram-1.jpg );
+  background: #779b9b;
    background-size: cover ;
-   height: 100%;
+width: 100%;
    height: 100%;
   }
 }

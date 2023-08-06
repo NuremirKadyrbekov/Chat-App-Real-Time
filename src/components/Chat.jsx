@@ -66,6 +66,7 @@ const Chat = () => {
   const onEmojiClick = ({ emoji }) => setMessage(`${message} ${emoji}`);
 
   return (
+    
     <div className={styles.wrap}>
       <div className={styles.Wrap2}>
 
