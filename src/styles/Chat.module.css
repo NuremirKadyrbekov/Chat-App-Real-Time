@@ -87,6 +87,37 @@
   background-image: url(https://phonoteka.org/uploads/posts/2021-04/1619156222_11-phonoteka_org-p-fon-dlya-chata-telegramm-12.jpg);
   background-size: cover;
   overflow: auto;
+  transition: 800ms;
+
+}
+.UsersSelect{
+  margin-left: 250px;
+  margin-top: -18px;
+  position: absolute;
+  background-color: rgba(0, 0, 139, 0);
+  border: none;
+  color: white;
+}
+.NameRoom{
+  font-weight: bold;
+  font-size: 28px;
+  margin-left: -70px;
+  margin-top: 5px;
+}
+.NameGroup{
+  font-size: 12px;
+  display: flex;
+  width: max-content;
+  margin-top: -30px;
+}
+.users{
+  margin-left: 100px;
+}
+.ParamsName{
+  color: green;
+  margin-left: 5px;
+  margin-top: -3px;
+  font-weight: bold;
 }
 .messages::-webkit-scrollbar {
   width: 10px;   
@@ -126,6 +157,9 @@
 .emoji img {
   vertical-align: middle;
 }
+.HeaderUsersCheck{
+  margin-left: 50px;
+}
 
 .emojies {
   position: absolute;
@@ -143,12 +177,25 @@
   height: 35px;
   border-radius: 6px;
   margin-left: 490px;
-  background: rgb(88, 86, 86);
+  background-color: rgba(215, 214, 214, 0.462);
   border-radius: 6px;
   font-size: 14px;
   padding: 10px;
-  color: #fff;
+  color: rgba(215, 214, 214, 0.593);
   cursor: pointer;
+  
+}
+.SwitchDark{
+  width: 70px;
+  height: 35px;
+  border-radius: 6px;
+  background-color: #17212b91;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 10px;
+  color: #17212b;
+  cursor: pointer;
+
 }
 .HeaderUsers{
   font-weight: bold;
@@ -182,6 +229,29 @@
     margin-top:100px;
     height: 640px;
   }
+  .SwitchDark{
+    position: absolute;
+    margin-left: -380px;
+    margin-top: -15px;
+    width: 50px;
+    height: 30px;
+  }
+  .UsersSelect{
+    position: absolute;
+    margin-left: -200px;
+    margin-top: -22px;
+    font-size: 12px;
+  }
+  .ParamsName{
+     margin-left: -3px;
+  }
+  .HeaderUsersCheck{
+     margin-left: 35px;
+  }
+  .UsersCheck{
+    font-size: 12px;
+    margin-top: -6px;
+  }
   .left{
    margin-left: -400px;
    width: 50px;
@@ -190,7 +260,13 @@
    display: flex;
    justify-content: center;
   }
-  
+  .NameGroup{
+    font-size: 10px;
+    
+  }
+  .NameRoom{
+    margin-left: -60px;
+  }
   .SwitchLight{
    margin-left: -200px;
    width: 50px;

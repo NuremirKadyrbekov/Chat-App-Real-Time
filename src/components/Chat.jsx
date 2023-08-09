@@ -4,14 +4,13 @@ import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import EmojiPicker from "emoji-picker-react";
-
 import icon from "../images/emoji.svg";
 import styles from "../styles/Chat.module.css";
 import Messages from "./Messages";
 
 const socket = io.connect("https://chat-app-react-server-2-0.onrender.com");
 
-const Chat = () => {
+const Chat = ({user,name}) => {
   const { search } = useLocation();
   const navigate = useNavigate();
   const [params, setParams] = useState({ room: "", user: "" });
@@ -50,6 +49,18 @@ const Chat = () => {
     // document.getElementById("Main").style.backgroundColor="red"
     document.getElementById("Main").className ='FFF'
     document.getElementById('Footer').className ="GGG"
+    document.getElementById("WWW").className="messagesTwo"
+    document.querySelector('body').className ="body2"
+    document.getElementById('UserSelect').className ="UsersSelectLight"
+
+  }
+  const dark = ()=>{
+    // document.getElementById("Main").style.backgroundColor="red"
+    document.getElementById("Main").className ='header'
+    document.getElementById('Footer').className ="form"
+    document.getElementById("WWW").className="messages"
+    document.querySelector('body').className ="body"
+    document.getElementById('UserSelect').className ="UsersSelect"
   }
   const handleChange = ({ target: { value } }) => setMessage(value);
 
@@ -71,11 +82,23 @@ const Chat = () => {
       <div className={styles.Wrap2}>
 
       <div className={styles.header} id="Main">
-        <div className={styles.title}>{params.room}</div>
-        <div className={styles.users}><p className={styles.HeaderUsers}>{users}</p> пользователя участвуют в беседе</div>
+        <div className={styles.title}> <p className={styles.NameGroup}>Название группы:</p> <p className={styles.NameRoom}>{params.room}</p> </div>
+        <div className={styles.users}><p className={styles.UsersCheck}>пользователей:</p><p className={styles.HeaderUsersCheck}>{users}</p> </div>
         <div>
-          <button className={styles.SwitchLight} onClick={Light}>
+              <div className={styles.UsersSelect} id="UserSelect" >
+
+               Профиль: <p className={styles.ParamsName}>{params.name}</p>
+                </div>   
+        </div>
+        <div>
+          <button className={styles.SwitchLight} onClick={Light} id="Light">
                  Light  
+          </button>
+            
+        </div>
+        <div>
+        <button className={styles.SwitchDark} onClick={dark} id="Dark">
+                 Dark
           </button>
         </div>
         <button className={styles.left} onClick={leftRoom}>
@@ -83,7 +106,7 @@ const Chat = () => {
         </button>
       </div>
 
-      <div className={styles.messages}>
+      <div className={styles.messages} id="WWW">
         <Messages messages={state} name={params.name} />
       </div>
 

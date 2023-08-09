@@ -8,6 +8,8 @@ body {
   margin: 0;
   overflow-x: hidden;
   color: rgb(48, 43, 43);
+  transition: 1.7s;
+
   
 }
 h1,
@@ -61,7 +63,8 @@ li {
   margin-top: -190px;
 }
 .FFF{
-  background-color: rgb(165, 163, 161);
+  background-color: rgba(205, 205, 205, 0.745);
+  
   width: 100%;
   color: #000000;
   display: flex;
@@ -69,6 +72,8 @@ li {
   justify-content: space-between;
   padding: 0 20px;
   border-radius:12px 12px 0 0 ;
+  transition: 1.7s;
+  
 }
 .GGG{
   
@@ -76,12 +81,160 @@ li {
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: rgb(165, 163, 161);
+  background-color: rgba(177, 175, 175, 0.807);
   justify-content: space-between;
   height: 80px;
   padding: 0 20px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
+  transition: 1.7s;
+
+}
+.messagesTwo{
+  flex-grow: 1;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  /* background: rgb(15, 65, 73); */
+  padding: 32px;
+  background-image: url(https://phonoteka.org/uploads/posts/2022-09/1663702375_5-phonoteka-org-p-foni-dlya-telegrama-vkontakte-6.png);
+  background-size: cover;
+  overflow: auto;
+  transition: 1.7s;
+}
+.body2 {
+  background-image: url(https://phonoteka.org/uploads/posts/2022-01/1642688657_31-phonoteka-org-p-svetlii-fon-dlya-saita-31.jpg);
+  background-repeat: no-repeat;
+  font-size: 16px;
+  background-size: cover;
+  font-family: Rubik, Roboto, sans-serif;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  color: rgb(48, 43, 43);
+  transition: 1.7s;
+    
+}
+
+.header {
+  width: 100%;
+  color: #fff;
+  background: #17212b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-radius:12px 12px 0 0 ;
+  transition: 1.7s;
+
+}
+.form {
+  color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #17212b;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 20px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  transition: 1.7s;
+
+}
+.messages {
+  flex-grow: 1;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  /* background: rgb(15, 65, 73); */
+  padding: 32px;
+  background-image: url(https://phonoteka.org/uploads/posts/2021-04/1619156222_11-phonoteka_org-p-fon-dlya-chata-telegramm-12.jpg);
+  background-size: cover;
+  overflow: auto;
+  transition: 800ms;
+  transition: 1.7s;
+
+}
+.messagesTwo::-webkit-scrollbar {
+  width: 10px;   
+  border-radius: 10px;
+  background: #fff;
+
+}
+.messagesTwo::-webkit-scrollbar-track {
+  background: #7a8da8;        /* цвет зоны отслеживания */
+  transition: 1s;
+
+}
+.messagesTwo::-webkit-scrollbar-thumb {
+  background-color: #aaacae;    /* цвет бегунка */
+  border-radius: 20px;       /* округлось бегунка */
+  transition: 1s;
+}
+.messagesTwo::-webkit-scrollbar-track:hover {
+  background: #637fa9;        /* цвет зоны отслеживания */
+  transition: 1s;
+
+}
+.messagesTwo::-webkit-scrollbar-thumb:hover {
+  background-color: #acb3bb;    /* цвет бегунка */
+  border-radius: 20px;       /* округлось бегунка */
+  transition: 1s;
+
+}
+.messages::-webkit-scrollbar {
+  width: 10px;   
+  border-radius: 10px;
+  background: #fff;
+
+}
+.messages::-webkit-scrollbar-track {
+  background: #242a33;        /* цвет зоны отслеживания */
+  transition: 1s;
+
+}
+.messages::-webkit-scrollbar-thumb {
+  background-color: #525a62;    /* цвет бегунка */
+  border-radius: 20px;       /* округлось бегунка */
+  transition: 1s;
+}
+.messages::-webkit-scrollbar-track:hover {
+  background: #404b5c;        /* цвет зоны отслеживания */
+  transition: 1s;
+
+}
+.messages::-webkit-scrollbar-thumb:hover {
+  background-color: #66727e;    /* цвет бегунка */
+  border-radius: 20px;       /* округлось бегунка */
+  transition: 1s;
+
+}
+.UsersSelectLight{
+  margin-left: 250px;
+  
+  margin-top: -18px;
+  position: absolute;
+  background-color: rgba(0, 0, 139, 0);
+  border: none;
+  color: rgb(0, 0, 0);
+  transition: 1.7s;
+}
+.ParamsName{
+  color: green;
+  margin-left: 5px;
+  margin-top: -3px;
+  font-weight: bold;
+}
+.UsersSelect{
+  margin-top: -18px;
+  position: absolute;
+  background-color: rgba(0, 0, 139, 0);
+  border: none;
+  color: white;
+  transition: 1.7s;
+  margin-left: 250px;
+  
 }
 /* @media (max-width:575px) {
        
