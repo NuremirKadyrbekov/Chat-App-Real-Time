@@ -42,26 +42,19 @@ const Chat = ({user,name}) => {
   const leftRoom = () => {
     socket.emit("leftRoom", { params });
     navigate("/");
-    alert(`Вы вышли из  ${params.room} беседы`)
     
   };
   const Light = ()=>{
     // document.getElementById("Main").style.backgroundColor="red"
-    document.getElementById("Main").className ='FFF'
-    document.getElementById('Footer').className ="GGG"
-    document.getElementById("WWW").className="messagesTwo"
-    document.querySelector('body').className ="body2"
-    document.getElementById('UserSelect').className ="UsersSelectLight"
+    document.getElementById("Main").classList.toggle("FFF")
+    document.getElementById('Footer').classList.toggle('GGG')
+    document.getElementById("WWW").classList.toggle("messagesTwo")
+    document.querySelector('body').classList.toggle("body2")
+    document.getElementById('UserSelect').classList.toggle("UsersSelectLight")
+    document.getElementById("SunOrMoon").classList.toggle('SunOrMoon2')
+    document.getElementById('Light').classList.toggle("SwitchDark")
+  }
 
-  }
-  const dark = ()=>{
-    // document.getElementById("Main").style.backgroundColor="red"
-    document.getElementById("Main").className ='header'
-    document.getElementById('Footer').className ="form"
-    document.getElementById("WWW").className="messages"
-    document.querySelector('body').className ="body"
-    document.getElementById('UserSelect').className ="UsersSelect"
-  }
   const handleChange = ({ target: { value } }) => setMessage(value);
 
   const handleSubmit = (e) => {
@@ -71,36 +64,37 @@ const Chat = ({user,name}) => {
 
     socket.emit("sendMessage", { message, params });
 
-    setMessage("");
+    setMessage(""); 
   };
 
   const onEmojiClick = ({ emoji }) => setMessage(`${message} ${emoji}`);
 
   return (
     
-    <div className={styles.wrap}>
+    <div className={styles.wrap} id="wrap">
       <div className={styles.Wrap2}>
 
       <div className={styles.header} id="Main">
-        <div className={styles.title}> <p className={styles.NameGroup}>Название группы:</p> <p className={styles.NameRoom}>{params.room}</p> </div>
+        <div className={styles.title}> <p className={styles.NameGroup}>Название группы:</p> <div><p className={styles.NameRoom}>{params.room}</p> </div> </div>
         <div className={styles.users}><p className={styles.UsersCheck}>пользователей:</p><p className={styles.HeaderUsersCheck}>{users}</p> </div>
-        <div>
+        <div className={styles.ParSelect}>
               <div className={styles.UsersSelect} id="UserSelect" >
 
                Профиль: <p className={styles.ParamsName}>{params.name}</p>
                 </div>   
         </div>
         <div>
-          <button className={styles.SwitchLight} onClick={Light} id="Light">
-                 Light  
-          </button>
+
+           <button className={styles.SwitchLight} onClick={Light} id="Light">
+                 <div className={styles.SunOrMoon} id="SunOrMoon"></div>  
+          </button> 
             
         </div>
-        <div>
+       {/* <div>
         <button className={styles.SwitchDark} onClick={dark} id="Dark">
                  Dark
           </button>
-        </div>
+        </div> */}
         <button className={styles.left} onClick={leftRoom}>
           Выйти
         </button>
@@ -132,13 +126,13 @@ const Chat = ({user,name}) => {
           )}
         </div>
 
-        <div className={styles.button}>
+        <div className={styles.button} >
           <input type="submit" onSubmit={handleSubmit} value="Отправить сообшение " />
         </div>
+          
       </form>
     </div>
       </div>
-    
   );
 };
 
