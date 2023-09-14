@@ -104,12 +104,13 @@ transition: 1.7s;
   transition: 1.7s;
 }
 .UsersSelect{
-  margin-left: 00px;
+  margin-left: -20px;
   margin-top: -18px;
   position: absolute;
   background-color: rgba(0, 0, 139, 0);
   border: none;
   color: white;
+  transition: 1.7s;
 }
 
 .NameRoom{
@@ -117,6 +118,10 @@ transition: 1.7s;
   font-size: 28px;
   margin-left: -120px;
   margin-top: 15px;
+  font-weight: bold;
+  color: rgb(14, 138, 60);
+
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .NameGroup{
   font-size: 12px;
@@ -127,15 +132,18 @@ transition: 1.7s;
 .NameGroup div{
   display: flex;
   justify-content: center;
+
 }
 .users{
   margin-left: 100px;
 }
 .ParamsName{
   color: green;
-  margin-left: 5px;
+  margin-left: 20px;
   margin-top: -3px;
   font-weight: bold;
+  color: rgb(14, 138, 60);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .messages::-webkit-scrollbar {
   width: 10px;   
@@ -180,6 +188,8 @@ transition: 1.7s;
 }
 .HeaderUsersCheck{
   margin-left: 50px;
+  color: rgb(14, 138, 60);
+  
 }
 
 .emojies {
